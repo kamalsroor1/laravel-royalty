@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Formatters;
+namespace laratrist\Royalty\Formatters;
 
 class PointsFormatter
 {

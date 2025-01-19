@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Console;
+namespace laratrist\Royalty\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
@@ -60,7 +60,7 @@ class RoyaltySetup extends Command
         $this->info('Publishing config...');
 
         $this->call('vendor:publish', [
-            '--provider' => 'Miracuthbert\Royalty\RoyaltyServiceProvider',
+            '--provider' => 'laratrist\Royalty\RoyaltyServiceProvider',
             '--tag' => 'royalty-config',
             '--force' => $this->hasOption('force') && $this->option('force')
         ]);
@@ -69,7 +69,7 @@ class RoyaltySetup extends Command
             $this->info('Publishing migrations...');
 
             $this->call('vendor:publish', [
-                '--provider' => 'Miracuthbert\Royalty\RoyaltyServiceProvider',
+                '--provider' => 'laratrist\Royalty\RoyaltyServiceProvider',
                 '--tag' => 'royalty-migrations',
                 '--force' => $publishMigrations,
             ]);
@@ -79,7 +79,7 @@ class RoyaltySetup extends Command
             $this->info('Publishing components...');
 
             $this->call('vendor:publish', [
-                '--provider' => 'Miracuthbert\Royalty\RoyaltyServiceProvider',
+                '--provider' => 'laratrist\Royalty\RoyaltyServiceProvider',
                 '--tag' => 'royalty-components',
                 '--force' => $this->hasOption('force') && $this->option('force')
             ]);

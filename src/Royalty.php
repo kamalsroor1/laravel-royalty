@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty;
+namespace laratrist\Royalty;
 
 class Royalty
 {

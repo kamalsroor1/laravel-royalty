@@ -1,11 +1,11 @@
 <?php
 
-namespace Miracuthbert\Royalty\Traits;
+namespace laratrist\Royalty\Traits;
 
-use Miracuthbert\Royalty\Actions\ActionAbstract;
-use Miracuthbert\Royalty\Events\PointsGiven;
-use Miracuthbert\Royalty\Exceptions\PointModelMissingException;
-use Miracuthbert\Royalty\Formatters\PointsFormatter;
+use laratrist\Royalty\Actions\ActionAbstract;
+use laratrist\Royalty\Events\PointsGiven;
+use laratrist\Royalty\Exceptions\PointModelMissingException;
+use laratrist\Royalty\Formatters\PointsFormatter;
 
 trait CollectsPoints
 {
@@ -35,7 +35,7 @@ trait CollectsPoints
     /**
      * Add given point to user.
      *
-     * @param \Miracuthbert\Royalty\Actions\ActionAbstract $action
+     * @param \laratrist\Royalty\Actions\ActionAbstract $action
      * @return void
      * @throws PointModelMissingException
      */

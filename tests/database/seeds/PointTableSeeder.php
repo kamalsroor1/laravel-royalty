@@ -1,11 +1,11 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests\database\seeds;
+namespace laratrist\Royalty\Tests\database\seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Miracuthbert\Royalty\Models\Point;
+use laratrist\Royalty\Models\Point;
 
 class PointTableSeeder extends Seeder
 {

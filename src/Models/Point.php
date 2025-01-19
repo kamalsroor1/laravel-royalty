@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Models;
+namespace laratrist\Royalty\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

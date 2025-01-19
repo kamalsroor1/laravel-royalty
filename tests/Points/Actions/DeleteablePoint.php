@@ -1,8 +1,8 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests\Points\Actions;
+namespace laratrist\Royalty\Tests\Points\Actions;
 
-use Miracuthbert\Royalty\Actions\ActionAbstract;
+use laratrist\Royalty\Actions\ActionAbstract;
 
 class DeleteablePoint extends ActionAbstract
 {

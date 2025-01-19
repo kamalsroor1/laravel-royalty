@@ -1,10 +1,10 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests\Unit;
+namespace laratrist\Royalty\Tests\Unit;
 
-use Miracuthbert\Royalty\Actions\ActionAbstract;
-use Miracuthbert\Royalty\Tests\Points\Actions\Subscriber;
-use Miracuthbert\Royalty\Tests\TestCase;
+use laratrist\Royalty\Actions\ActionAbstract;
+use laratrist\Royalty\Tests\Points\Actions\Subscriber;
+use laratrist\Royalty\Tests\TestCase;
 
 class ActionTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Facades;
+namespace laratrist\Royalty\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

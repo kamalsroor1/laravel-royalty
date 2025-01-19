@@ -1,10 +1,10 @@
 <?php
 
-namespace Miracuthbert\Royalty;
+namespace laratrist\Royalty;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Miracuthbert\Royalty\Events\PointsGiven;
+use laratrist\Royalty\Events\PointsGiven;
 
 class EventServiceProvider extends ServiceProvider
 {

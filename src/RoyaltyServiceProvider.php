@@ -1,11 +1,11 @@
 <?php
 
-namespace Miracuthbert\Royalty;
+namespace laratrist\Royalty;
 
 use Illuminate\Support\ServiceProvider;
-use Miracuthbert\Royalty\Console\RoyaltyAction;
-use Miracuthbert\Royalty\Console\RoyaltyActions;
-use Miracuthbert\Royalty\Console\RoyaltySetup;
+use laratrist\Royalty\Console\RoyaltyAction;
+use laratrist\Royalty\Console\RoyaltyActions;
+use laratrist\Royalty\Console\RoyaltySetup;
 
 class RoyaltyServiceProvider extends ServiceProvider
 {

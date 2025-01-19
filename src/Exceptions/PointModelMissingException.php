@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Exceptions;
+namespace laratrist\Royalty\Exceptions;
 
 use Exception;
 

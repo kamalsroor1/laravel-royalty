@@ -40,7 +40,7 @@ return [
          * The model to use for points.
          * 
          */
-        'model' => \Miracuthbert\Royalty\Models\Point::class,
+        'model' => \laratrist\Royalty\Models\Point::class,
 
         /*
          *

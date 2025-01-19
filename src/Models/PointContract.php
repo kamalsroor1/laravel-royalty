@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Models;
+namespace laratrist\Royalty\Models;
 
 interface PointContract
 {

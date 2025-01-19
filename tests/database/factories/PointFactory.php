@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use Miracuthbert\Royalty\Models\Point;
+use laratrist\Royalty\Models\Point;
 use Faker\Generator as Faker;
 
 $factory->define(Point::class, function (Faker $faker) {

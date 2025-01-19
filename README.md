@@ -1,4 +1,3 @@
-# Laravel Royalty
 
 A user points package for Laravel that can be used to give rewards, loyalty or experience points with real time support.
 
@@ -18,7 +17,7 @@ The reason we use action (files) is:
 Use composer to install the package:
 
 ```
-composer require miracuthbert/laravel-royalty
+composer require laratrist/laravel-royalty
 ```
 
 ## Setup
@@ -28,7 +27,7 @@ The package takes advantage of Laravel Auto-Discovery, so it doesn't require you
 If you don't use auto-discovery, add the ServiceProvider to the providers array in `config/app.php`
 
 ```php
-Miracuthbert\Royalty\RoyaltyServiceProvider::class
+laratrist\Royalty\RoyaltyServiceProvider::class
 ```
 
 You must then publish the `config` and `migrations` file.
@@ -49,7 +48,7 @@ If you want to reset either `config` or `migrations` use the commands below in y
 ### Publish Config
 
 ```
-php artisan vendor:publish --provider=Miracuthbert\Royalty\RoyaltyServiceProvider --tag=royalty-config
+php artisan vendor:publish --provider=laratrist\Royalty\RoyaltyServiceProvider --tag=royalty-config
 ```
 
 > Setup the user `model` key in config to indicate which User model to use
@@ -57,7 +56,7 @@ php artisan vendor:publish --provider=Miracuthbert\Royalty\RoyaltyServiceProvide
 ### Publish Migrations
 
 ```
-php artisan vendor:publish --provider=Miracuthbert\Royalty\RoyaltyServiceProvider --tag=royalty-migrations
+php artisan vendor:publish --provider=laratrist\Royalty\RoyaltyServiceProvider --tag=royalty-migrations
 ```
 
 > Before migrating the database make sure you setup the user `model` key in config
@@ -67,7 +66,7 @@ php artisan vendor:publish --provider=Miracuthbert\Royalty\RoyaltyServiceProvide
 A simple Vue component is included to display a user's points in real-time anytime they are given points. See [Real-time](#real-time) section under usage for more.
 
 ```
-php artisan vendor:publish --provider=Miracuthbert\Royalty\RoyaltyServiceProvider --tag=royalty-components
+php artisan vendor:publish --provider=laratrist\Royalty\RoyaltyServiceProvider --tag=royalty-components
 ```
 
 > The package does not tie you to use a specific front-end framework to listen to the fired event, so feel free to experiment 
@@ -123,12 +122,12 @@ To create a point manually you need to create an `action` file and also a `recor
 
 ##### Creating the Action File
 
-To create a point action file, you need to create a class that extends `Miracuthbert\Royalty\Actions\ActionAbstract`.
+To create a point action file, you need to create a class that extends `laratrist\Royalty\Actions\ActionAbstract`.
 
 ```php
 namespace App\Royalty\Actions;
 
-use Miracuthbert\Royalty\Actions\ActionAbstract;
+use laratrist\Royalty\Actions\ActionAbstract;
 
 class CompletedLesson extends ActionAbstract
 {
@@ -147,7 +146,7 @@ class CompletedLesson extends ActionAbstract
 ##### Adding Points in the Database
 
 ```php
-use Miracuthbert\Royalty\Models\Point;
+use laratrist\Royalty\Models\Point;
 
 $point = Point::create([
     'name' => 'Completed Lesson',
@@ -198,7 +197,7 @@ foreach ($points as $point) {
     $exists = Point::where('key', $point['key'])->first();
 
     if (!$exists) {
-        Miracuthbert\Royalty\Models\Point::create($point);
+        laratrist\Royalty\Models\Point::create($point);
     }
 } 
 ```
@@ -279,7 +278,7 @@ Example using Laravel Echo with Vue.js:
 There is a Vue component included with the package. Use command below to publish it:
 
 ```
-php artisan vendor:publish --provider=Miracuthbert\Royalty\RoyaltyServiceProvider --tag=royalty-components
+php artisan vendor:publish --provider=laratrist\Royalty\RoyaltyServiceProvider --tag=royalty-components
 ```
 
 The published component will be placed in your `resources/js/components` directory. Once the components have been published, you should register them in your `resources/js/app.js` file:
@@ -307,11 +306,11 @@ There are three commands within the package:
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability, please send an e-mail to Cuthbert Mirambo via [miracuthbert@gmail.com](mailto:miracuthbert@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability, please send an e-mail to Kamal Sroor via [kamal.s.sroor@gmail.com](mailto:kamal.s.sroor@gmail.com). All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [Cuthbert Mirambo](https://github.com/miracuthbert)
+- [Kamal Sroor](https://github.com/laratrist)
 
 ## License
 

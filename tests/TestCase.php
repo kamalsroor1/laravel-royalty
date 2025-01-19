@@ -1,14 +1,14 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests;
+namespace laratrist\Royalty\Tests;
 
 use Eloquent;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Kalnoy\Nestedset\NestedSetServiceProvider;
-use Miracuthbert\Royalty\Models\Point;
-use Miracuthbert\Royalty\RoyaltyServiceProvider;
-use Miracuthbert\Royalty\Tests\database\seeds\PointTableSeeder;
-use Miracuthbert\Royalty\Tests\Models\User;
+use laratrist\Royalty\Models\Point;
+use laratrist\Royalty\RoyaltyServiceProvider;
+use laratrist\Royalty\Tests\database\seeds\PointTableSeeder;
+use laratrist\Royalty\Tests\Models\User;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

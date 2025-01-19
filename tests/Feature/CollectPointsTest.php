@@ -1,14 +1,14 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests\Feature;
+namespace laratrist\Royalty\Tests\Feature;
 
 use Illuminate\Support\Facades\Event;
-use Miracuthbert\Royalty\Events\PointsGiven;
-use Miracuthbert\Royalty\Exceptions\PointModelMissingException;
-use Miracuthbert\Royalty\Tests\Models\User;
-use Miracuthbert\Royalty\Tests\Points\Actions\CompletedTask;
-use Miracuthbert\Royalty\Tests\Points\Actions\Subscriber;
-use Miracuthbert\Royalty\Tests\TestCase;
+use laratrist\Royalty\Events\PointsGiven;
+use laratrist\Royalty\Exceptions\PointModelMissingException;
+use laratrist\Royalty\Tests\Models\User;
+use laratrist\Royalty\Tests\Points\Actions\CompletedTask;
+use laratrist\Royalty\Tests\Points\Actions\Subscriber;
+use laratrist\Royalty\Tests\TestCase;
 
 class CollectPointsTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests\Models;
+namespace laratrist\Royalty\Tests\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Miracuthbert\Royalty\Traits\CollectsPoints;
+use laratrist\Royalty\Traits\CollectsPoints;
 
 class User extends Authenticatable
 {

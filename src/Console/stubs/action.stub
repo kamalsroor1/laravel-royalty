@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Miracuthbert\Royalty\Actions\ActionAbstract;
+use laratrist\Royalty\Actions\ActionAbstract;
 
 class DummyClass extends ActionAbstract
 {

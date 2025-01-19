@@ -1,8 +1,8 @@
 {
-    "name": "miracuthbert/laravel-royalty",
+    "name": "laratrist/laravel-royalty",
     "description": "A user points package for Laravel that can be used to give rewards, loyalty or experience points with real time support",
     "keywords": [
-        "miracuthbert",
+        "laratrist",
         "laravel",
         "royalty",
         "loyalty-points",
@@ -13,17 +13,17 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Cuthbert Mirambo",
-            "email": "miracuthbert@gmail.com"
+            "name": "Kamal Sroor",
+            "email": "kamal.s.sroor@gmail.com"
         }
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/console": "^7.0|^8.0|^9.0|^10.0",
-        "illuminate/database": "^7.0|^8.0|^9.0|^10.0",
-        "illuminate/events": "^7.0|^8.0|^9.0|^10.0",
-        "illuminate/http": "^7.0|^8.0|^9.0|^10.0",
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/console": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "illuminate/database": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "illuminate/events": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "illuminate/http": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
         "kalnoy/nestedset": ">=5.0"
     },
     "require-dev": {
@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Miracuthbert\\Royalty\\": "src/"
+            "laratrist\\Royalty\\": "src/"
         },
         "files": [
             "src/Helpers/helpers.php"
@@ -41,7 +41,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Miracuthbert\\Royalty\\Tests\\": "tests/"
+            "laratrist\\Royalty\\Tests\\": "tests/"
         },
         "classmap": [
             "tests/database/seeds"
@@ -52,10 +52,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Miracuthbert\\Royalty\\RoyaltyServiceProvider"
+                "laratrist\\Royalty\\RoyaltyServiceProvider"
             ],
             "aliases": {
-                "Royalty": "Miracuthbert\\Royalty\\Facades\\Royalty"
+                "Royalty": "laratrist\\Royalty\\Facades\\Royalty"
             }
         }
     }

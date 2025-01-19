@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Console;
+namespace laratrist\Royalty\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

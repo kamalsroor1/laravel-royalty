@@ -1,8 +1,8 @@
 <?php
 
-namespace Miracuthbert\Royalty\Actions;
+namespace laratrist\Royalty\Actions;
 
-use Miracuthbert\Royalty\Models\Point;
+use laratrist\Royalty\Models\Point;
 
 abstract class ActionAbstract
 {

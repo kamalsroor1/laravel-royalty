@@ -1,12 +1,12 @@
 <?php
 
-namespace Miracuthbert\Royalty\Tests\Unit;
+namespace laratrist\Royalty\Tests\Unit;
 
-use Miracuthbert\Royalty\Models\Point;
-use Miracuthbert\Royalty\Tests\Models\User;
-use Miracuthbert\Royalty\Tests\Points\Actions\DeleteablePoint;
-use Miracuthbert\Royalty\Tests\Points\Actions\Subscriber;
-use Miracuthbert\Royalty\Tests\TestCase;
+use laratrist\Royalty\Models\Point;
+use laratrist\Royalty\Tests\Models\User;
+use laratrist\Royalty\Tests\Points\Actions\DeleteablePoint;
+use laratrist\Royalty\Tests\Points\Actions\Subscriber;
+use laratrist\Royalty\Tests\TestCase;
 
 class PointTest extends TestCase
 {

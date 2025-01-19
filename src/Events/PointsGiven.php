@@ -1,6 +1,6 @@
 <?php
 
-namespace Miracuthbert\Royalty\Events;
+namespace laratrist\Royalty\Events;
 
 
 use Illuminate\Queue\SerializesModels;
@@ -8,7 +8,7 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use Miracuthbert\Royalty\Models\PointContract;
+use laratrist\Royalty\Models\PointContract;
 
 class PointsGiven implements ShouldBroadcast
 {
